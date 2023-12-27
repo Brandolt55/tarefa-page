@@ -1,0 +1,51 @@
+@use "../../sass/_varibles.scss" as *;
+
+.Headerr {
+  background-color: $header-background;
+  color: $white;
+  height: 88px;
+  display: flex;
+  align-items: center; /* Centraliza verticalmente os itens */
+
+  &__organizacao,
+  &__tarefas {
+    display: flex;
+    align-items: center; /* Centraliza verticalmente os textos */
+    background-color: $header-background;
+
+    h3 {
+      padding: 0 20px; /* Adiciona espaço entre os textos e as bordas */
+      margin-top: 12px;
+      background-color: $header-background;
+    }
+    h2{
+      background-color: $white;
+    }
+  }
+
+  &__tarefas {
+    border: none;
+    background-color: $white;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    color: $header-background;
+    margin-top: 17px;
+    margin-left: 12px; /* Adiciona espaço entre "Organização" e "Tarefas" */
+    padding-left: 26px;
+    padding-right: 26px;
+    padding-top: 13px;
+    padding-bottom: 9px;
+    font-size: 12px;
+
+    .caixa-tarefa {
+      height: 30px;
+      color: $header-background;
+      border: none; /* ou a cor desejada */
+      top: 0;
+      bottom: 0; /* Coloca a caixa na parte inferior */
+      left: 50%; /* Ajusta para que a caixa fique no meio horizontalmente */
+      transform: translateX(-50%); /* Ajusta para centralizar totalmente */
+      width: 100%; /* Ajusta para que a caixa ocupe toda a largura do bloco "Tarefas" */
+    }
+  }
+}
