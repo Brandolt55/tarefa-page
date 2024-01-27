@@ -8,7 +8,7 @@ const Header = () => {
         <h3>Organização</h3>
       </div>
       <div className='Headerr__tarefas'>
-        <h2>Tarefa</h2>
+        <h2>Tarefas</h2>
         <div className='caixa-tarefa'></div>
       </div>
     </div>
