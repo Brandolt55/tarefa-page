@@ -5,21 +5,20 @@
   color: $white;
   height: 88px;
   display: flex;
-  align-items: center;
-  position: relative;
+  align-items: center; /* Centraliza verticalmente os itens */
 
   &__organizacao,
   &__tarefas {
     display: flex;
-    align-items: center;
+    align-items: center; /* Centraliza verticalmente os textos */
     background-color: $header-background;
 
     h3 {
-      padding: 0 20px;
+      padding: 0 20px; /* Adiciona espaço entre os textos e as bordas */
       margin-top: 12px;
       background-color: $header-background;
     }
-    h2 {
+    h2{
       background-color: $white;
     }
   }
@@ -31,7 +30,7 @@
     border-top-right-radius: 10px;
     color: $header-background;
     margin-top: 17px;
-    margin-left: 12px;
+    margin-left: 12px; /* Adiciona espaço entre "Organização" e "Tarefas" */
     padding-left: 26px;
     padding-right: 26px;
     padding-top: 13px;
@@ -41,80 +40,12 @@
     .caixa-tarefa {
       height: 30px;
       color: $header-background;
-      border: none;
+      border: none; /* ou a cor desejada */
       top: 0;
-      bottom: 0;
-      left: 50%;
-      transform: translateX(-50%);
-      width: 100%;
+      bottom: 0; /* Coloca a caixa na parte inferior */
+      left: 50%; /* Ajusta para que a caixa fique no meio horizontalmente */
+      transform: translateX(-50%); /* Ajusta para centralizar totalmente */
+      width: 100%; /* Ajusta para que a caixa ocupe toda a largura do bloco "Tarefas" */
     }
-  }
-
-  .dark-mode-toggle {
-    cursor: pointer;
-    display: flex;
-    align-items: center; /* Adicionado para centralizar verticalmente */
-    margin-left: 68%; /* Empurra para a direita */
-    button {
-      background: none;
-      border: none;
-      padding: 0;
-      img {
-        width: 40px;
-        height: 40px;
-        background-color: $header-background;
-      }
-    }
-  }
-
-  &.dark-mode {
-    color: $white;
-  }
-}
-
-.checkbox-wrapper-54 {
-  .switch {
-    --width-of-switch: 3.5em;
-    --height-of-switch: 2em;
-    --size-of-icon: 1.4em;
-    --slider-offset: 0.3em;
-    position: absolute;
-    top: 50%; /* Ajustado para manter a posição no meio verticalmente */
-    right: 20px;
-    transform: translateY(-50%); /* Ajustado para centralizar verticalmente */
-    width: var(--width-of-switch);
-    height: var(--height-of-switch);
-    display: inline-block;
-  }
-
-  .slider {
-    position: relative; /* Alterado para relativo para que o botão fique no fluxo normal do documento */
-    cursor: pointer;
-    background-color: #f4f4f5;
-    transition: .4s;
-    border-radius: 30px;
-  }
-
-  .slider:before {
-    position: absolute;
-    content: "";
-    height: var(--size-of-icon, 1.4em);
-    width: var(--size-of-icon, 1.4em);
-    border-radius: 20px;
-    left: var(--slider-offset, 0.3em);
-    top: 50%;
-    transform: translateY(-50%);
-    background: linear-gradient(40deg, #ff0080, #ff8c00 70%);
-    transition: .4s;
-  }
-
-  input:checked + .slider {
-    background-color: #f4f4f5;
-  }
-
-  input:checked + .slider:before {
-    left: calc(100% - (var(--size-of-icon, 1.4em) + var(--slider-offset, 0.3em)));
-    background: transparent; /* Alterado para transparente */
-    box-shadow: inset -3px -2px 5px -2px #8983f7, inset -10px -4px 0 0 #a3dafb;
   }
 }
