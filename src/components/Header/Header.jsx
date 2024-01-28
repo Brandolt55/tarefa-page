@@ -1,5 +1,6 @@
 import React from 'react';
 import './index.scss';
+import task from "../../../public/taskicon.svg"
 
 const Header = () => {
   return (
@@ -11,6 +12,7 @@ const Header = () => {
         <h2>Tarefas</h2>
         <div className='caixa-tarefa'></div>
       </div>
+      <img src={task} alt="Ícone de Tarefa" className="task-icon" />
     </div>
   );
 };

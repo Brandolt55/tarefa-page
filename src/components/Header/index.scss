@@ -7,6 +7,12 @@
   display: flex;
   align-items: center; /* Centraliza verticalmente os itens */
 
+  .task-icon{
+    margin-left: 66%;
+    background-color: $header-background;
+    width: 50px;
+  }
+
   &__organizacao,
   &__tarefas {
     display: flex;
